@@ -20,7 +20,7 @@
       <!-- create icons for apps on desktop -->
 
       <div id="desktopApp" class="desktop desktop__app">
-        <label for="windows98-ie-input" class="desktop__logo">
+        <div class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -29,9 +29,9 @@
             />
           </div>
           <div class="desktop__text">Internet Explorer</div>
-        </label>
+        </div>
 
-        <label for="windows98-bin-input" class="desktop__logo">
+        <div class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -40,9 +40,9 @@
             />
           </div>
           <div class="desktop__text">Recycle Bin</div>
-        </label>
+        </div>
 
-        <label for="windows98-notepad-input" class="desktop__logo">
+        <div class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -52,9 +52,9 @@
             />
           </div>
           <div class="desktop__text">Notepad</div>
-        </label>
+        </div>
 
-        <label for="windows98-doc-input" class="desktop__logo">
+        <div class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -63,7 +63,7 @@
             />
           </div>
           <div class="desktop__text">Documents</div>
-        </label>
+        </div>
       </div>
     </div>
 
@@ -90,7 +90,7 @@
             <div class="start-menu__text">Programs</div>
           </div>
 
-          <div class="start-menu__list">
+          <div id="openDocuments" class="start-menu__list">
             <div class="start-menu__icons">
               <img
                 class="start-menu__img"
@@ -102,7 +102,10 @@
 
             <hr />
 
-            <div class="start-menu__list">
+            <div
+              id="startPhotos"
+              class="start-menu__list start-menu__list--photo"
+            >
               <div class="start-menu__icons">
                 <img
                   class="start-menu__img"
@@ -124,7 +127,7 @@
 
                 <hr />
 
-                <div class="start-menu__list">
+                <div class="start-menu__list start-notepad">
                   <div class="start-menu__icons">
                     <img
                       class="start-menu__img"
@@ -169,21 +172,21 @@
             <div class="ie-header__buttons--logo">
               <img
                 class="ie-header__img"
-                src="/assets/title-bar-icons/minimize.png"
+                src="./assets/title-bar-icons/minimize.png"
                 alt="minimize"
               />
             </div>
             <div class="ie-header__buttons--logo">
               <img
                 class="ie-header__img"
-                src="/assets/title-bar-icons/sizing.png"
+                src="./assets/title-bar-icons/sizing.png"
                 alt="size"
               />
             </div>
             <div class="ie-header__buttons--logo">
               <img
                 class="ie-header__img"
-                src="/assets/title-bar-icons/close.png"
+                src="./assets/title-bar-icons/close.png"
                 alt="close"
               />
             </div>
@@ -240,21 +243,21 @@
             <div class="notepad-header__buttons--logo">
               <img
                 class="notepad-header__img"
-                src="/assets/title-bar-icons/minimize.png"
+                src="./assets/title-bar-icons/minimize.png"
                 alt="minimize"
               />
             </div>
             <div class="notepad-header__buttons--logo">
               <img
                 class="notepad-header__img"
-                src="/assets/title-bar-icons/sizing.png"
+                src="./assets/title-bar-icons/sizing.png"
                 alt="size"
               />
             </div>
             <div class="notepad-header__buttons--logo">
               <img
                 class="notepad-header__img"
-                src="/assets/title-bar-icons/close.png"
+                src="./assets/title-bar-icons/close.png"
                 alt="close"
               />
             </div>
@@ -279,7 +282,7 @@
     <!-- 3. documents folder -->
 
     <!-- positioning container -->
-    <div class="documents-position">
+    <div id="documents" class="documents-position">
       <!-- main div container -->
       <div class="documents-container">
         <!-- header with name and buttons -->
@@ -291,21 +294,21 @@
             <div class="documents-header__buttons--logo">
               <img
                 class="documents-header__img"
-                src="/assets/title-bar-icons/minimize.png"
+                src="./assets/title-bar-icons/minimize.png"
                 alt="minimize"
               />
             </div>
             <div class="documents-header__buttons--logo">
               <img
                 class="documents-header__img"
-                src="/assets/title-bar-icons/sizing.png"
+                src="./assets/title-bar-icons/sizing.png"
                 alt="size"
               />
             </div>
             <div class="documents-header__buttons--logo">
               <img
                 class="documents-header__img"
-                src="/assets/title-bar-icons/close.png"
+                src="./assets/title-bar-icons/close.png"
                 alt="close"
               />
             </div>
@@ -331,7 +334,7 @@
           <div class="documentsTwo-nav__items">
             <img
               class="documentsTwo-nav__img"
-              src="/assets/documents-icons/back-arrow.png"
+              src="./assets/documents-icons/back-arrow.png"
               alt="back-arrow"
             />
             <p class="documentsTwo-nav__text">Back</p>
@@ -339,7 +342,7 @@
           <div class="documentsTwo-nav__items">
             <img
               class="documentsTwo-nav__img"
-              src="/assets/documents-icons/front-arrow.png"
+              src="./assets/documents-icons/front-arrow.png"
               alt="back-arrow"
             />
             <p class="documentsTwo-nav__text">Forward</p>
@@ -347,7 +350,7 @@
           <div class="documentsTwo-nav__items">
             <img
               class="documentsTwo-nav__img"
-              src="/assets/documents-icons/scissors.png"
+              src="./assets/documents-icons/scissors.png"
               alt="back-arrow"
             />
             <p class="documentsTwo-nav__text">Cut</p>
@@ -355,7 +358,7 @@
           <div class="documentsTwo-nav__items">
             <img
               class="documentsTwo-nav__img"
-              src="/assets/documents-icons/copy.png"
+              src="./assets/documents-icons/copy.png"
               alt="back-arrow"
             />
             <p class="documentsTwo-nav__text">Copy</p>

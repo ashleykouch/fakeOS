@@ -34,6 +34,10 @@
   font-weight: 100;
   transform: scale(0.75, 1.5);
 }
+.desktop__text--onclick {
+  background-color: blue;
+  color: white;
+}
 
 .icon__img {
   width: 100px;
@@ -81,6 +85,9 @@
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+}
+.start-menu__container--display {
+  display: none;
 }
 .start-menu__header {
   writing-mode: vertical-rl;
@@ -247,9 +254,12 @@ textarea {
 }
 
 .documents-position {
+  display: none;
+}
+.documents-position--display {
   display: flex;
   justify-content: center;
-  margin-top: -200px;
+  margin-top: 50px;
   margin-left: 500px;
 }
 

@@ -18,69 +18,14 @@ function clock() {
 }
 setInterval(clock, 1000);
 
-// const documentHighlight = document.querySelector(".documents-files__input");
-
-// documentHighlight.addEventListener("click",  function () {
-//   body.classList.toggle("document-files__input--text--onclick");
-// });
-
-/* event listeners */
-
-// syntax: element.addEventListener(event, function, useCapture)
-
-// const docFiles = document.querySelector("#docFiles");
-
-// const docInput = document.querySelector("#docInput");
-
-// docImg.addEventListener("click", () => {
-//   const docText = document.querySelector("#docText");
-
-//   docText.style.backgroundColour = "blue";
-// });
-
-// also working function
-
-// const docText = document.querySelector(".documents-files__input--text");
-
-// const docImg = document.querySelector(".documents-files__input--img");
-
-// docImg.addEventListener("click", () => {
-//   docText.classList.toggle("documents-files__input--text--onclick");
-// });
-
-// docText.addEventListener("click", () => {
-//   docText.classList.toggle("documents-files__input--text--onclick");
-// });
-
-// working function
-
-// const docText = document.querySelector("#docText");
-
-// const docImg = document
-//   .querySelector("#docImg")
-//   .addEventListener("click", changeColor);
-
-// function changeColor() {
-//   docText.classList.toggle("documents-files__input--text--onclick");
-//   return false;
-// }
-
-// testing
-
-// const docText = document.querySelectorAll(".documents-files__input--text");
-// console.dir(docText);
-
-// const docImg = document.querySelectorAll(".documents-files__input--img");
-// console.dir(docImg);
+// event listener for document files
 
 const docInput = document.querySelectorAll(".documents-files__input");
 console.dir(docInput);
 
-console.log("hello");
-
 docInput.forEach((item) => {
-  //   console.log(item.querySelector(".documents-files__input--text").textContent)
-  console.log(item.querySelector(".documents-files__input--img").src);
+  //   console.log(item.querySelector(".documents-files__input--img").src)
+  console.log(item.querySelector(".documents-files__input--text").textContent);
   item.addEventListener("click", () => {
     docInput.forEach((eachFile) => {
       eachFile
@@ -93,8 +38,54 @@ docInput.forEach((item) => {
   });
 });
 
-// docImg.forEach(() => {
-//   .addEventListener("click", () => {
-//     docText.classList.toggle("documents-files__input--text--onclick");
+// event listener for desktop apps
+
+// const desktopApp = document.querySelectorAll(".desktop__logo");
+// console.dir(desktopApp);
+
+// desktopApp.forEach((app) => {
+//   console.log(app.querySelector(".desktop__text").textContent);
+//   app.addEventListener("click", () => {
+//     desktopApp.forEach((eachApp) => {
+//       eachApp
+//         .querySelector(".desktop__text")
+//         .classList.remove("desktop__text--onclick");
+//     });
+//     app
+//       .querySelector(".desktop__text")
+//       .classList.toggle("desktop__text--onclick");
 //   });
 // });
+
+// open documents from start menu
+// - identify the issue of it opening multiple items
+
+const openStartDocument = document.querySelector("#openDocuments");
+console.dir(openStartDocument);
+
+const documentsWindow = document.querySelector("#documents");
+console.dir(documentsWindow);
+
+openStartDocument.addEventListener("click", () => {
+  documentsWindow.classList.toggle("documents-position--display");
+});
+
+// open notepad from start menu
+
+// const openStartNotepad = document.querySelector(".start-notepad");
+
+// const notepadWindow = document.querySelector(".notepad-position");
+
+// openStartNotepad.addEventListener("click", () => {
+//   notepadWindow.classList.toggle("notepad--position-display");
+// });
+
+// open and close start menu
+
+const startButton = document.getElementById("#startButton");
+
+const openMenu = document.getElementById("#startMenu");
+
+startButton.addEventListener("click", () =>
+  openMenu.classList.toggle("start-menu__container--display")
+);
