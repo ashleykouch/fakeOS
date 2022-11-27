@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <title>Windows98 FakeOS</title>
+  </head>
+  <body>
+    <!-- desktop image  -->
+    <div class="desktop">
+      <img
+        class="desktop__img"
+        src="./assets/windows98.jpeg"
+        alt="desktop-img"
+      />
+
+      <!-- create icons for apps on desktop -->
+
+      <div id="desktopApp" class="desktop desktop__app">
+        <label for="windows98-ie-input" class="desktop__logo">
+          <div class="icon">
+            <img
+              class="icon__img"
+              src="./assets/logo-icons/ie-logo.png"
+              alt="interet-explorer"
+            />
+          </div>
+          <div class="desktop__text">Internet Explorer</div>
+        </label>
+
+        <label for="windows98-bin-input" class="desktop__logo">
+          <div class="icon">
+            <img
+              class="icon__img"
+              src="./assets/logo-icons/recycle-bin-logo.png"
+              alt="recycle-bin"
+            />
+          </div>
+          <div class="desktop__text">Recycle Bin</div>
+        </label>
+
+        <label for="windows98-notepad-input" class="desktop__logo">
+          <div class="icon">
+            <img
+              class="icon__img"
+              class="icon__img"
+              src="./assets/logo-icons/notepad-logo.png"
+              alt="notepad"
+            />
+          </div>
+          <div class="desktop__text">Notepad</div>
+        </label>
+
+        <label for="windows98-doc-input" class="desktop__logo">
+          <div class="icon">
+            <img
+              class="icon__img"
+              src="./assets/logo-icons/documents-logo.png"
+              alt="documents"
+            />
+          </div>
+          <div class="desktop__text">Documents</div>
+        </label>
+      </div>
+    </div>
+
+    <!-- create the taskbar -->
+    <div class="taskbar">
+      <img
+        class="start-button-logo"
+        src="./assets/logo-icons/start-button.png"
+      />
+      <div class="clock"></div>
+    </div>
+
+    <!-- create start menu -->
+    <nav id="startMenu" class="start-menu">
+      <div class="start-menu__container">
+        <h3 class="start-menu__header">Windows98</h3>
+        <div class="start-menu__list">
+          <div class="start-menu__icons">
+            <img
+              class="start-menu__img"
+              src="./assets/logo-icons/programs-logo.png"
+              alt="programs-logo"
+            />
+            <div class="start-menu__text">Programs</div>
+          </div>
+
+          <div class="start-menu__list">
+            <div class="start-menu__icons">
+              <img
+                class="start-menu__img"
+                src="./assets/logo-icons/documents-logo.png"
+                alt="programs-logo"
+              />
+              <div class="start-menu__text">Documents</div>
+            </div>
+
+            <hr />
+
+            <div class="start-menu__list">
+              <div class="start-menu__icons">
+                <img
+                  class="start-menu__img"
+                  src="./assets/logo-icons/photo-gallery.png"
+                  alt="programs-logo"
+                />
+                <div class="start-menu__text">Photo Gallery</div>
+              </div>
+
+              <div class="start-menu__list">
+                <div class="start-menu__icons">
+                  <img
+                    class="start-menu__img"
+                    src="./assets/logo-icons/ie-logo.png"
+                    alt="programs-logo"
+                  />
+                  <div class="start-menu__text">Internet Explorer</div>
+                </div>
+
+                <hr />
+
+                <div class="start-menu__list">
+                  <div class="start-menu__icons">
+                    <img
+                      class="start-menu__img"
+                      src="./assets/logo-icons/notepad-logo.png"
+                      alt="programs-logo"
+                    />
+                    <div class="start-menu__text">Notepad</div>
+                  </div>
+
+                  <div class="start-menu__list">
+                    <div class="start-menu__icons">
+                      <img
+                        class="start-menu__img"
+                        src="./assets/logo-icons/shutdown-logo.png"
+                        alt="programs-logo"
+                      />
+                      <div class="start-menu__text">Shutdown</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- create individual windows -->
+
+    <!-- 1. internet explorer -->
+
+    <!-- positioning container -->
+    <div class="ie-position">
+      <!-- main div container -->
+      <div class="ie-container">
+        <!-- header with website name and buttons -->
+
+        <div class="ie-header">
+          <h3 class="ie-header__text">Facebook - log in or sign up</h3>
+          <!-- seperate container for window functions -->
+          <div class="ie-header__buttons">
+            <div class="ie-header__buttons--logo">
+              <img
+                class="ie-header__img"
+                src="/assets/title-bar-icons/minimize.png"
+                alt="minimize"
+              />
+            </div>
+            <div class="ie-header__buttons--logo">
+              <img
+                class="ie-header__img"
+                src="/assets/title-bar-icons/sizing.png"
+                alt="size"
+              />
+            </div>
+            <div class="ie-header__buttons--logo">
+              <img
+                class="ie-header__img"
+                src="/assets/title-bar-icons/close.png"
+                alt="close"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation incl. file, edit, view, favourites, tools, help -->
+
+        <div class="ie-nav">
+          <p class="ie-nav__text">File</p>
+          <p class="ie-nav__text">Edit</p>
+          <p class="ie-nav__text">View</p>
+          <p class="ie-nav__text">Favourites</p>
+          <p class="ie-nav__text">Tools</p>
+          <p class="ie-nav__text">Help</p>
+        </div>
+        <hr />
+
+        <!-- address bar -->
+
+        <div class="ie-address">
+          <p class="ie-nav__text">Address</p>
+          <input
+            class="ie-address__bar"
+            type="text"
+            placeholder="www.facebook.com"
+          />
+        </div>
+
+        <!-- website -->
+        <div class="ie-website">
+          <iframe
+            class="ie-website__src"
+            src="https://www.facebook.com/"
+            title="Facebook"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. notepad -->
+
+    <!-- positioning container -->
+    <div class="notepad-position">
+      <!-- main div container -->
+
+      <div class="notepad-container">
+        <!-- header with name and buttons -->
+
+        <div class="notepad-header">
+          <h3 class="notepad-header__text">Untitled - Notepad</h3>
+          <!-- seperate container for window functions -->
+          <div class="notepad-header__buttons">
+            <div class="notepad-header__buttons--logo">
+              <img
+                class="notepad-header__img"
+                src="/assets/title-bar-icons/minimize.png"
+                alt="minimize"
+              />
+            </div>
+            <div class="notepad-header__buttons--logo">
+              <img
+                class="notepad-header__img"
+                src="/assets/title-bar-icons/sizing.png"
+                alt="size"
+              />
+            </div>
+            <div class="notepad-header__buttons--logo">
+              <img
+                class="notepad-header__img"
+                src="/assets/title-bar-icons/close.png"
+                alt="close"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation incl. file, edit, search -->
+        <div class="notepad-nav">
+          <p class="notepad-nav__text">File</p>
+          <p class="notepad-nav__text">Edit</p>
+          <p class="notepad-nav__text">Search</p>
+        </div>
+
+        <!-- text input -->
+
+        <!-- <input class="notepad-text" type="text" /> -->
+
+        <textarea class="notpad-text"></textarea>
+      </div>
+    </div>
+
+    <!-- 3. documents folder -->
+
+    <!-- positioning container -->
+    <div class="documents-position">
+      <!-- main div container -->
+      <div class="documents-container">
+        <!-- header with name and buttons -->
+
+        <div class="documents-header">
+          <h3 class="documents-header__text">My Documents</h3>
+          <!-- seperate container for window functions -->
+          <div class="documents-header__buttons">
+            <div class="documents-header__buttons--logo">
+              <img
+                class="documents-header__img"
+                src="/assets/title-bar-icons/minimize.png"
+                alt="minimize"
+              />
+            </div>
+            <div class="documents-header__buttons--logo">
+              <img
+                class="documents-header__img"
+                src="/assets/title-bar-icons/sizing.png"
+                alt="size"
+              />
+            </div>
+            <div class="documents-header__buttons--logo">
+              <img
+                class="documents-header__img"
+                src="/assets/title-bar-icons/close.png"
+                alt="close"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- navigation incl. file, edit, search -->
+
+        <div class="documents-nav">
+          <p class="documents-nav__text">File</p>
+          <p class="documents-nav__text">Edit</p>
+          <p class="documents-nav__text">View</p>
+          <p class="documents-nav__text">Go</p>
+          <p class="documents-nav__text">Favourites</p>
+          <p class="documents-nav__text">Help</p>
+        </div>
+
+        <!-- navigation 2 incl. back, forward, cup, copy -->
+
+        <hr />
+
+        <div class="documentsTwo-nav">
+          <div class="documentsTwo-nav__items">
+            <img
+              class="documentsTwo-nav__img"
+              src="/assets/documents-icons/back-arrow.png"
+              alt="back-arrow"
+            />
+            <p class="documentsTwo-nav__text">Back</p>
+          </div>
+          <div class="documentsTwo-nav__items">
+            <img
+              class="documentsTwo-nav__img"
+              src="/assets/documents-icons/front-arrow.png"
+              alt="back-arrow"
+            />
+            <p class="documentsTwo-nav__text">Forward</p>
+          </div>
+          <div class="documentsTwo-nav__items">
+            <img
+              class="documentsTwo-nav__img"
+              src="/assets/documents-icons/scissors.png"
+              alt="back-arrow"
+            />
+            <p class="documentsTwo-nav__text">Cut</p>
+          </div>
+          <div class="documentsTwo-nav__items">
+            <img
+              class="documentsTwo-nav__img"
+              src="/assets/documents-icons/copy.png"
+              alt="back-arrow"
+            />
+            <p class="documentsTwo-nav__text">Copy</p>
+          </div>
+        </div>
+
+        <!-- address bar - my documents -->
+
+        <hr />
+
+        <div class="documents-address">
+          <p class="documents-nav__text">Address</p>
+          <input
+            class="documents-address__bar"
+            type="text"
+            placeholder="My Documents"
+          />
+        </div>
+
+        <!-- file area div -->
+
+        <div id="docFiles" class="documents-files">
+          <!-- files -->
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/folder.png"
+            />
+            <p class="documents-files__input--text">_nology</p>
+          </div>
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/text-file.png"
+            />
+            <p class="documents-files__input--text">secret_code.txt</p>
+          </div>
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/zip-folder.png"
+            />
+            <p class="documents-files__input--text">fakeOS project</p>
+          </div>
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/folder.png"
+            />
+            <p class="documents-files__input--text">games</p>
+          </div>
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/word-doc.png"
+            />
+            <p class="documents-files__input--text">JS Cheat Sheet</p>
+          </div>
+          <div class="documents-files__input">
+            <img
+              class="documents-files__input--img"
+              src="./assets/documents-icons/text-file.png"
+            />
+            <p class="documents-files__input--text">portfolio HTML.txt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

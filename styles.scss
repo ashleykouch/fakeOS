@@ -1,0 +1,11 @@
+@use "./_styles/desktop";
+@use "./_styles/start-menu";
+@use "./_styles/ie";
+@use "./_styles/notepad";
+@use "./_styles/documents";
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+}
