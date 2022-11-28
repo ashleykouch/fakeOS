@@ -57,8 +57,9 @@ docInput.forEach((item) => {
 //   });
 // });
 
+// DOCUMENTS
+
 // open documents from start menu
-// - identify the issue of it opening multiple items
 
 const openStartDocument = document.getElementById("openDocuments");
 console.dir(openStartDocument);
@@ -78,6 +79,17 @@ openDesktopDocument.addEventListener("click", () => {
   documentsWindow.classList.toggle("documents-position--display");
 });
 
+// close documents window with "x"
+// once the document closes using "x" it doesnt reopen unless refreshed
+const closeDocuments = document.getElementById("closeDocuments");
+
+closeDocuments.addEventListener("click", (event) => {
+  event.preventDefault();
+  documentsWindow.classList.toggle("documents-position--noDisplay");
+});
+
+// NOTEPAD
+
 // open notepad from start menu
 
 const openStartNotepad = document.getElementById("openNotepad");
@@ -95,6 +107,16 @@ const openDesktopNotepad = document.getElementById("desktopNotepad");
 
 openDesktopNotepad.addEventListener("click", () => {
   notepadWindow.classList.toggle("notepad-position--display");
+});
+
+// close notepad window with "x"
+// once the notepad closes using "x" it doesnt reopen unless refreshed
+const closeNotepad = document.getElementById("closeNotepad");
+
+closeNotepad.addEventListener("click", (event) => {
+  event.preventDefault();
+  notepadWindow.classList.remove("notepad-position--noDisplay");
+  notepadWindow.classList.toggle("notepad-position--noDisplay");
 });
 
 // open internet explorer from start
@@ -125,3 +147,12 @@ startButton.addEventListener("click", (event) => {
   event.preventDefault();
   openMenu.classList.toggle("start-menu__container--display");
 });
+
+// desktop, highlight text blue when clicked
+
+// const desktopClick = document.getElementsByClassName("icon__img");
+// const desktopText = document.getElementsByClassName("desktop__text");
+
+// desktopClick.addEventListener("click", () => {
+//   desktopText.classList.toggle("desktop__text--onclick");
+// });

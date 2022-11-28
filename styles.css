@@ -215,6 +215,9 @@
   margin-top: 100px;
   margin-right: 300px;
 }
+.notepad-position--noDisplay {
+  display: none;
+}
 
 .notepad-container {
   position: absolute;
@@ -270,6 +273,9 @@ textarea {
   justify-content: center;
   margin-top: 100px;
   margin-left: 500px;
+}
+.documents-position--noDisplay {
+  display: none;
 }
 
 .documents-container {
