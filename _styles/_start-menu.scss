@@ -45,8 +45,10 @@
     align-items: flex-end;
     flex-wrap: wrap;
 
+    display: none;
+
     &--display {
-      display: none;
+      display: flex;
     }
   }
 

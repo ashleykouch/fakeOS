@@ -1,8 +1,12 @@
 .notepad-position {
-  display: flex;
-  justify-content: center;
-  margin-top: 150px;
-  margin-right: 300px;
+  display: none;
+
+  &--display {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 300px;
+  }
 }
 
 .notepad-container {

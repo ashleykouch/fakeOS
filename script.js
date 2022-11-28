@@ -70,22 +70,58 @@ openStartDocument.addEventListener("click", () => {
   documentsWindow.classList.toggle("documents-position--display");
 });
 
+// open documents from desktop
+
+const openDesktopDocument = document.getElementById("desktopDocuments");
+
+openDesktopDocument.addEventListener("click", () => {
+  documentsWindow.classList.toggle("documents-position--display");
+});
+
 // open notepad from start menu
 
-// const openStartNotepad = document.querySelector(".start-notepad");
+const openStartNotepad = document.getElementById("openNotepad");
+console.dir(openStartNotepad);
 
-// const notepadWindow = document.querySelector(".notepad-position");
+const notepadWindow = document.getElementById("notepad");
 
-// openStartNotepad.addEventListener("click", () => {
-//   notepadWindow.classList.toggle("notepad--position-display");
-// });
+openStartNotepad.addEventListener("click", () => {
+  notepadWindow.classList.toggle("notepad-position--display");
+});
+
+// open notepad from desktop
+
+const openDesktopNotepad = document.getElementById("desktopNotepad");
+
+openDesktopNotepad.addEventListener("click", () => {
+  notepadWindow.classList.toggle("notepad-position--display");
+});
+
+// open internet explorer from start
+
+const openIE = document.getElementById("internet");
+
+const IEWindow = document.getElementById("internetExplorer");
+
+openIE.addEventListener("click", () => {
+  IEWindow.classList.toggle("ie-position--display");
+});
+
+// open internet explorer from desktop
+
+const openDesktopIE = document.getElementById("desktopIE");
+
+openDesktopIE.addEventListener("click", () => {
+  IEWindow.classList.toggle("ie-position--display");
+});
 
 // open and close start menu
 
-// const startButton = document.getElementById("#startButton");
+const startButton = document.getElementById("startButton");
 
-// const openMenu = document.getElementById("#startMenu");
+const openMenu = document.getElementById("startMenu");
 
-// startButton.addEventListener("click", () =>
-//   openMenu.classList.toggle("start-menu__container--display")
-// );
+startButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  openMenu.classList.toggle("start-menu__container--display");
+});

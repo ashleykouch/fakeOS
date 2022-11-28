@@ -85,9 +85,10 @@
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  display: none;
 }
 .start-menu__container--display {
-  display: none;
+  display: flex;
 }
 .start-menu__header {
   writing-mode: vertical-rl;
@@ -129,6 +130,9 @@
 }
 
 .ie-position {
+  display: none;
+}
+.ie-position--display {
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -195,15 +199,20 @@
   position: absolute;
   background-color: white;
   width: 500px;
+  height: 300px;
 }
 .ie-website__src {
   width: 495px;
+  height: 300px;
 }
 
 .notepad-position {
+  display: none;
+}
+.notepad-position--display {
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-right: 300px;
 }
 
@@ -259,7 +268,7 @@ textarea {
 .documents-position--display {
   display: flex;
   justify-content: center;
-  margin-top: -50px;
+  margin-top: 100px;
   margin-left: 500px;
 }
 

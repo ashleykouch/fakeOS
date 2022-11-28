@@ -1,7 +1,11 @@
 .ie-position {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  display: none;
+
+  &--display {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
 }
 
 .ie-container {
@@ -78,8 +82,10 @@
   position: absolute;
   background-color: white;
   width: 500px;
+  height: 300px;
 
   &__src {
     width: 495px;
+    height: 300px;
   }
 }

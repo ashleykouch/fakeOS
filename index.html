@@ -20,7 +20,7 @@
       <!-- create icons for apps on desktop -->
 
       <div id="desktopApp" class="desktop desktop__app">
-        <div class="desktop__logo">
+        <div id="desktopIE" class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -42,7 +42,7 @@
           <div class="desktop__text">Recycle Bin</div>
         </div>
 
-        <div class="desktop__logo">
+        <div id="desktopNotepad" class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -54,7 +54,7 @@
           <div class="desktop__text">Notepad</div>
         </div>
 
-        <div class="desktop__logo">
+        <div id="desktopDocuments" class="desktop__logo">
           <div class="icon">
             <img
               class="icon__img"
@@ -77,8 +77,8 @@
     </div>
 
     <!-- create start menu -->
-    <nav id="startMenu" class="start-menu">
-      <div class="start-menu__container">
+    <div class="start-menu">
+      <div id="startMenu" class="start-menu__container">
         <h3 class="start-menu__header">Windows98</h3>
         <div class="start-menu__list">
           <div class="start-menu__icons">
@@ -90,8 +90,8 @@
             <div class="start-menu__text">Programs</div>
           </div>
 
-          <div id="openDocuments" class="start-menu__list">
-            <div class="start-menu__icons">
+          <div class="start-menu__list">
+            <div id="openDocuments" class="start-menu__icons">
               <img
                 class="start-menu__img"
                 src="./assets/logo-icons/documents-logo.png"
@@ -116,7 +116,7 @@
               </div>
 
               <div class="start-menu__list">
-                <div class="start-menu__icons">
+                <div id="internet" class="start-menu__icons">
                   <img
                     class="start-menu__img"
                     src="./assets/logo-icons/ie-logo.png"
@@ -128,7 +128,7 @@
                 <hr />
 
                 <div class="start-menu__list start-notepad">
-                  <div class="start-menu__icons">
+                  <div id="openNotepad" class="start-menu__icons">
                     <img
                       class="start-menu__img"
                       src="./assets/logo-icons/notepad-logo.png"
@@ -153,14 +153,14 @@
           </div>
         </div>
       </div>
-    </nav>
+    </div>
 
     <!-- create individual windows -->
 
     <!-- 1. internet explorer -->
 
     <!-- positioning container -->
-    <div class="ie-position">
+    <div id="internetExplorer" class="ie-position">
       <!-- main div container -->
       <div class="ie-container">
         <!-- header with website name and buttons -->
@@ -230,7 +230,7 @@
     <!-- 2. notepad -->
 
     <!-- positioning container -->
-    <div class="notepad-position">
+    <div id="notepad" class="notepad-position">
       <!-- main div container -->
 
       <div class="notepad-container">
