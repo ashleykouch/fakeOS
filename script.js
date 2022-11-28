@@ -60,10 +60,10 @@ docInput.forEach((item) => {
 // open documents from start menu
 // - identify the issue of it opening multiple items
 
-const openStartDocument = document.querySelector("#openDocuments");
+const openStartDocument = document.getElementById("openDocuments");
 console.dir(openStartDocument);
 
-const documentsWindow = document.querySelector("#documents");
+const documentsWindow = document.getElementById("documents");
 console.dir(documentsWindow);
 
 openStartDocument.addEventListener("click", () => {
@@ -82,10 +82,10 @@ openStartDocument.addEventListener("click", () => {
 
 // open and close start menu
 
-const startButton = document.getElementById("#startButton");
+// const startButton = document.getElementById("#startButton");
 
-const openMenu = document.getElementById("#startMenu");
+// const openMenu = document.getElementById("#startMenu");
 
-startButton.addEventListener("click", () =>
-  openMenu.classList.toggle("start-menu__container--display")
-);
+// startButton.addEventListener("click", () =>
+//   openMenu.classList.toggle("start-menu__container--display")
+// );

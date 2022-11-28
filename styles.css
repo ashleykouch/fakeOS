@@ -259,7 +259,7 @@ textarea {
 .documents-position--display {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: -50px;
   margin-left: 500px;
 }
 
