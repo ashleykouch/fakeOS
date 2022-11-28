@@ -1,0 +1,91 @@
+.ie-position {
+  display: none;
+
+  &--display {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
+.ie-container {
+  position: absolute;
+}
+
+.ie-header {
+  background-image: linear-gradient(
+    to right,
+    rgb(5, 21, 138),
+    blue,
+    rgb(56, 56, 250),
+    rgb(78, 78, 222),
+    rgb(97, 97, 150)
+  );
+  width: 500px;
+  height: 25px;
+  display: flex;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100px;
+  }
+
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__text {
+    color: white;
+    width: 500px;
+    margin-left: 10px;
+  }
+}
+
+.ie-nav {
+  background-color: rgb(185, 185, 185);
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 25px;
+  align-items: center;
+
+  &__text {
+    margin-left: 5px;
+    margin-right: 10px;
+    color: rgb(93, 93, 93);
+  }
+}
+
+.ie-address {
+  background-color: rgb(185, 185, 185);
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 25px;
+  align-items: center;
+
+  &__bar {
+    width: 400px;
+  }
+
+  &__text {
+    margin-left: 5px;
+    margin-right: 10px;
+    color: rgb(93, 93, 93);
+  }
+}
+
+.ie-website {
+  position: absolute;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+
+  &__src {
+    width: 495px;
+    height: 300px;
+  }
+}
