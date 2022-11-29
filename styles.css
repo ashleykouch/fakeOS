@@ -144,6 +144,7 @@
 
 .ie-header {
   background-image: linear-gradient(to right, rgb(5, 21, 138), blue, rgb(56, 56, 250), rgb(78, 78, 222), rgb(97, 97, 150));
+  cursor: move;
   width: 500px;
   height: 25px;
   display: flex;
