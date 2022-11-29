@@ -1,6 +1,6 @@
 // insert live clock in taskbar
 
-function clock() {
+export function clock() {
   const time = new Date(),
     hours = time.getHours(),
     minutes = time.getMinutes(),
