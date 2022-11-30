@@ -1,6 +1,6 @@
 // insert live clock in taskbar
 
-function clock() {
+export function clock() {
   const time = new Date(),
     hours = time.getHours(),
     minutes = time.getMinutes(),
@@ -80,12 +80,11 @@ openDesktopDocument.addEventListener("click", () => {
 });
 
 // close documents window with "x"
-// once the document closes using "x" it doesnt reopen unless refreshed
 const closeDocuments = document.getElementById("closeDocuments");
 
 closeDocuments.addEventListener("click", (event) => {
   event.preventDefault();
-  documentsWindow.classList.toggle("documents-position--noDisplay");
+  documentsWindow.classList.remove("documents-position--display");
 });
 
 // NOTEPAD
@@ -110,13 +109,11 @@ openDesktopNotepad.addEventListener("click", () => {
 });
 
 // close notepad window with "x"
-// once the notepad closes using "x" it doesnt reopen unless refreshed
 const closeNotepad = document.getElementById("closeNotepad");
 
 closeNotepad.addEventListener("click", (event) => {
   event.preventDefault();
-  notepadWindow.classList.remove("notepad-position--noDisplay");
-  notepadWindow.classList.toggle("notepad-position--noDisplay");
+  notepadWindow.classList.remove("notepad-position--display");
 });
 
 // open internet explorer from start
@@ -137,6 +134,14 @@ openDesktopIE.addEventListener("click", () => {
   IEWindow.classList.toggle("ie-position--display");
 });
 
+// close internet explorer window with "x"
+const closeIE = document.getElementById("closeIE");
+
+closeIE.addEventListener("click", (event) => {
+  event.preventDefault();
+  IEWindow.classList.remove("ie-position--display");
+});
+
 // open and close start menu
 
 const startButton = document.getElementById("startButton");
@@ -147,12 +152,3 @@ startButton.addEventListener("click", (event) => {
   event.preventDefault();
   openMenu.classList.toggle("start-menu__container--display");
 });
-
-// desktop, highlight text blue when clicked
-
-// const desktopClick = document.getElementsByClassName("icon__img");
-// const desktopText = document.getElementsByClassName("desktop__text");
-
-// desktopClick.addEventListener("click", () => {
-//   desktopText.classList.toggle("desktop__text--onclick");
-// });
